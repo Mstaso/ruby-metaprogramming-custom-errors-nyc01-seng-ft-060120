@@ -10,7 +10,7 @@ class Person
     if person.class != Person
       begin
       raise YourCustomError
-      rescue YourCustomError
+      rescue YourCustomError =>
       end
     else
     person.partner = self
