@@ -11,7 +11,7 @@ class Person
       begin
       raise YourCustomError
       rescue YourCustomError => error
-      puts ""
+      puts error.message
       end
     else
     person.partner = self
